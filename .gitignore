@@ -1,0 +1,22 @@
+# Python virtual environment
+env/
+venv/
+
+# Kaggle dataset unzipped
+data/
+*.zip
+
+# Byte-compiled
+__pycache__/
+*.pyc
+
+# Jupyter checkpoint files
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+
+
+utils/
