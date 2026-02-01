@@ -1,0 +1,4 @@
+Modelo,RMSE ($),R2,Best Params
+Regresión Lineal (Base),23711.83,0.918,{}
+Lasso (L1),30165.72,0.8673,{'model__alpha': 0.001}
+Ridge (L2),30742.37,0.8621,{'model__alpha': 10.0}
