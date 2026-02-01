@@ -9,7 +9,16 @@ modeling:
   TARGET_COLUMN: 'SalePrice'
   VALID_SIZE: 0.2
 
+# hyperparameters:
+#   RIDGE_ALPHAS: [0.011, 0.1, 1.0, 10.0, 100.0]
+#   LASSO_ALPHAS: [0.0001, 0.001, 0.01, 0.1, 1.0]
+#   ELASTICNET_L1_RATIO: 0.5
+
 hyperparameters:
-  ALPHA_RIDGE: [0.1, 1.0, 10.0]
-  ALPHA_LASSO: [0.001, 0.01, 0.1]
+  # Agregamos valores más pequeños (0.01, 0.001) para Ridge
+  RIDGE_ALPHAS: [0.001, 0.01, 0.1, 1.0, 10.0, 100.0]
+  
+  # Agregamos valores MUCHO más pequeños (1e-5, 1e-4) para Lasso
+  LASSO_ALPHAS: [0.00001, 0.0001, 0.001, 0.01, 0.1, 1.0]
+  
   ELASTICNET_L1_RATIO: 0.5
